@@ -3,7 +3,7 @@ import requests
 
 app = Flask(__name__)
 
-@app.route('/hello', methods=['GET'])
+@app.route('/', methods=['GET'])
 def hello():
     visitor_name = request.args.get('visitor_name', 'Visitor')
     client_ip = request.remote_addr
